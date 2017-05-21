@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './containers/App';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+const Appy = () => (
+  <MuiThemeProvider>
+    <App />
+  </MuiThemeProvider>
+);
 
 
-// We require the routes and render to the DOM using ReactDOM API
 ReactDOM.render(
-      <App/>,
+      <Appy/>,
     document.getElementById('root')
 );
