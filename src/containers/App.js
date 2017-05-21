@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Header from '../common/Header';
-import Home  from '../components/HomePage'
+import Home  from '../components/HomePage';
+import TimeLine from '../components/TimeLine';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // The parent component renders the Header component and component(s) in the
@@ -18,6 +19,8 @@ class App extends Component {
           <Switch>
          <Route exact path="/" component={Home}/>
          <Route exact  path="/library" render={() => (<div>logout</div>)} />
+         <Route exact  path="/Skills" render={() => (<div>Skills</div>)} />
+         <Route exact  path="/Projects" component={TimeLine} />
          </Switch>
         </div>
 
