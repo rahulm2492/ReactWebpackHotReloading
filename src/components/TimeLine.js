@@ -4,7 +4,6 @@ class TimeLine extends Component {
 
   componentDidMount(){
   	var items = document.querySelectorAll(".timeline li");
-   console.log(items, "dfsdfsdf");
   // check if an element is in viewport
   // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
@@ -38,18 +37,30 @@ render() {
   <ul>
     <li>
       <div>
-        <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        <time>August 2016 - Till Now</time>
+         Joined Sapient Global Markets, Gurgaon Under Sapient Consulting as Associate Interactive Developer.
+         Under Sapient , joined RBS(Royal Bank Of ScotLand) as Consultant.
       </div>
     </li>
     <li>
       <div>
-        <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+        <time>Oct 2015 - Aug 2016</time>
+        Joined Qburst Technologies, Chennai as Software Engineer. Under Qburst worked for Fast Retailing
+        Group , Japan in their innovation Team to develop Ecommerce WebApps and Native Apps
       </div>
     </li>
     <li>
       <div>
-        <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. 
-        Suspendisse varius volutpat mattis. Vestibulum id magna est.
+        <time>May 2014 - Oct 2015</time>
+         Joined Cognizant Technology , Chennai as Programmar Analyst.Under Cognizant Got Extensive Training in
+         UI Development Languages and Tools.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>May 2013 - May 2014</time>
+         Joined MRM Procom Pvt Limited, Faridabad  as R&D Engineer.Under MRM Procom Worked on Latest Tools and Languages 
+         Used for Develop Firmware Softwares.
       </div>
     </li>
   </ul>
