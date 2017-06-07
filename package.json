@@ -9,7 +9,10 @@
     "react-router": "^4.0.0",
     "react-router-dom": "^4.0.0",
     "redux": "^3.6.0",
-    "redux-saga": "^0.14.3"
+    "redux-saga": "^0.14.3",
+    "nodemailer": "latest",
+    "express": "latest",
+    "body-parser": "^1.8.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
@@ -19,6 +22,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm install -g pushstate-server && pushstate-server build"
+    "deploy": "node server"
   }
 }

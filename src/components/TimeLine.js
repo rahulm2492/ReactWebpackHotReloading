@@ -31,12 +31,25 @@ class TimeLine extends Component {
 
 
   }
+
+  sendData(){
+  	fetch('http://localhost:3000/set', {
+	  method: 'post',
+	  headers: {
+	    'Accept': 'application/json, text/plain, */*',
+	    'Content-Type': 'application/json'
+	  },
+  body: JSON.stringify({a: 7, str: 'Some string: &=&'})
+}).then(res=>res.json())
+  .then(res => console.log(res));
+};
+  
 render() {
 	return (
 <div className="timeline">
   <ul>
     <li>
-      <div>
+      <div onClick = {this.sendData.bind(this)}>
         <time>August 2016 - Till Now</time>
          Joined Sapient Global Markets, Gurgaon Under Sapient Consulting as Associate Interactive Developer.
          Under Sapient , joined RBS(Royal Bank Of ScotLand) as Consultant.
