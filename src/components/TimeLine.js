@@ -33,7 +33,7 @@ class TimeLine extends Component {
   }
 
   sendData(){
-  	fetch('http://localhost:3000/set', {
+  	fetch('/set', {
 	  method: 'post',
 	  headers: {
 	    'Accept': 'application/json, text/plain, */*',
