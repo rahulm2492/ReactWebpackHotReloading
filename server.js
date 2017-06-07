@@ -20,7 +20,9 @@ app.use(express.static(path.resolve(__dirname,  'build')));
 app.listen(3000,function(){
 console.log("Express Started on Port 3000");
 });
-
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('build'));
+}
 app.get('*', (req, res) => {
 	var mailOptions={
    to : "ruchi11dec@gmail.com",
