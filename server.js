@@ -15,7 +15,7 @@ var smtpTransport = nodemailer.createTransport({
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static(path.resolve(__dirname,  'build')));
+app.use(express.static(path.resolve(__dirname,  'public')));
 var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
 var server_host = process.env.YOUR_HOST || '0.0.0.0';
 app.listen(server_port, server_host,function(){

@@ -14,11 +14,11 @@ const Header = () => (
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>                        
       </button>
-      <a className="navbar-brand" href="library">PROFILE</a>
+      <a className="navbar-brand" href="/">PROFILE</a>
     </div>
     <div className="collapse navbar-collapse" id="myNavbar">
       <ul className="nav navbar-nav">
-        <li className="active"><a href="#">Home</a></li>
+        <li className="active"><a href="/">Home</a></li>
         <li><a href="/Skills">Skills</a></li>
         <li><a href="/Projects">Projects and Learning</a></li>
       </ul>
