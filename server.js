@@ -9,7 +9,7 @@ var smtpTransport = nodemailer.createTransport({
     host: "smtp.gmail.com",
     auth: {
         user: "mailtorahul2485@gmail.com",
-        pass: "Delhi@#92"
+        pass: "********"
     }
 });
 app.use(bodyParser.urlencoded({ extended: false }));
