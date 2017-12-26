@@ -12,6 +12,19 @@ body {
   display: block;
 }
 
+.summary {
+  margin:0 auto;
+  width:55%;
+  font-size: larger;
+  color:powderblue;
+  margin-top: 7px;
+}
+
+.skills {
+  margin: 0 auto;
+  margin-top: 2px;
+  width: 80%;
+}
 .selected-image, .select-video {
   height: 500px;
 }
